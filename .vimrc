@@ -100,8 +100,10 @@ set cmdheight=2              " 命令行的高度，默认为1，这里设为2
 "set nowrap                  " 设置不自动换行
 set writebackup              " 设置无备份文件
 set nobackup
-"set list                     " 显示Tab符，使用一高亮竖线代替
-set listchars=tab:\|\ ,
+
+set listchars=tab:>-,trail:-  " 显示Tab符，使用>-代替
+set list                    
+
 set tabstop=2                " 设置Tab键的宽度        [等同的空格个数]
 set expandtab                " 将Tab自动转化成空格    [需要输入真正的Tab键时，使用 Ctrl+V + Tab]
 syntax enable                " 打开语法高亮
